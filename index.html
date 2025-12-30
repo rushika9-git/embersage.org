@@ -1,128 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EmberSage — Home</title>
-  <meta name="description" content="A clean, WordPress-ish template for GitHub Pages." />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <script defer src="assets/js/theme.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EmberSage | Teen Wellness Community</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <span class="mark">EmberSage</span>
-        <span class="tag">Stories & notes</span>
-      </a>
+<header>
+  <h1>🔥 EmberSage</h1>
+  <p class="tagline">A safe community where teens connect, relax, and grow together</p>
+</header>
 
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="about.html">About</a>
-        <a href="post.html">Sample Post</a>
-      </nav>
+<section class="mission">
+  <h2>Our Mission</h2>
+  <p>
+    EmberSage is a nonprofit community initiative focused on helping
+    middle school and high school students reduce stress, build friendships,
+    and improve overall wellness through mindful, creative, and movement-based activities.
+  </p>
+</section>
 
-      <div class="header-actions">
-        <button class="btn icon-btn" type="button" onclick="toggleTheme()" aria-label="Toggle theme">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" stroke="currentColor" stroke-width="2"/>
-            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-          Theme
-        </button>
-      </div>
-    </div>
-  </header>
+<section class="events">
+  <h2>📅 Weekly Community Events (Saturdays)</h2>
+  <div id="event-list"></div>
+</section>
 
-  <main id="main">
-    <section class="hero">
-      <div class="container">
-        <div class="content">
-          <p class="kicker">Template</p>
-          <h1>A calm, readable layout for GitHub Pages.</h1>
-          <p class="lead">
-            This is a static template inspired by the clean spacing and typography of modern WordPress themes.
-            Edit the content, add pages, and push to GitHub to publish.
-          </p>
+<section class="signup">
+  <h2>📝 Sign Up for an Event</h2>
+  <p>
+    Participation is free. Parent/guardian consent is required.
+    Please register using the form below.
+  </p>
 
-          <div class="grid">
-            <article class="card">
-              <h2 class="section-title">Latest posts</h2>
+  <!-- 🔁 Replace the src with YOUR Google Form embed link -->
+  <iframe
+    src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"
+    width="100%"
+    height="900"
+    frameborder="0"
+    marginheight="0"
+    marginwidth="0">
+    Loading…
+  </iframe>
+</section>
 
-              <ul class="post-list">
-                <li class="post-item">
-                  <div class="post-meta">
-                    <span>Dec 30, 2025</span>
-                    <span>•</span>
-                    <span>Design</span>
-                  </div>
-                  <h3><a href="post.html">A sample post with nice typography</a></h3>
-                  <p style="margin:0;color:var(--muted);">
-                    Headings, blockquotes, code, and spacing that reads well on any screen.
-                  </p>
-                </li>
+<section class="disclaimer">
+  <h2>Important Disclaimer</h2>
+  <p>
+    EmberSage provides wellness and community-building activities only.
+    We do not offer medical, psychological, or clinical treatment.
+    All activities are optional and designed for general well-being.
+  </p>
+  <p>
+    Teens participate with parent/guardian awareness and consent.
+  </p>
+</section>
 
-                <li class="post-item">
-                  <div class="post-meta">
-                    <span>Dec 15, 2025</span>
-                    <span>•</span>
-                    <span>Notes</span>
-                  </div>
-                  <h3><a href="post.html">Another post (duplicate sample)</a></h3>
-                  <p style="margin:0;color:var(--muted);">
-                    Replace these with real posts, or generate pages from Markdown later.
-                  </p>
-                </li>
-              </ul>
+<footer>
+  <p>© 2025 EmberSage Community & Wellness Initiative</p>
+  <p>Non-profit | Volunteer-led | Community-driven</p>
+</footer>
 
-              <hr class="hr" />
-
-              <p class="badge">
-                Tip: For a real blog, you can later add a static generator (Jekyll/Hugo/Eleventy),
-                but this template works without one.
-              </p>
-            </article>
-
-            <aside class="card">
-              <h2 class="section-title">Start here</h2>
-              <p style="margin-top:0;color:var(--muted);">
-                Customize these three things first:
-              </p>
-              <ol style="margin:0; padding-left: 1.2rem; display:grid; gap: var(--space-2);">
-                <li>Site name + tagline</li>
-                <li>Colors in <code>:root</code></li>
-                <li>Links in the top nav</li>
-              </ol>
-
-              <hr class="hr" />
-
-              <p style="margin:0;color:var(--muted);">
-                Want it closer to Twenty Twenty-Five? Use a serif for headings, lots of whitespace,
-                and simple cards/borders—already baked in here.
-              </p>
-            </aside>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>© <span id="year"></span> EmberSage</div>
-      <div class="footer-links">
-        <a href="about.html">About</a>
-        <a href="post.html">Sample Post</a>
-        <a href="https://github.com/">GitHub</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<script src="script.js"></script>
 </body>
 </html>
