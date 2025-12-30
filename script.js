@@ -1,41 +1,35 @@
 const events = [
   {
-    date: "Saturday, Jan 4",
-    time: "5:00 – 6:00 PM",
     title: "🎨 Creative Art Night",
-    description: "Relax with drawing, coloring, and creative expression."
+    date: "Saturday, Jan 4",
+    description: "Relaxed art session focused on creativity and self-expression."
   },
   {
-    date: "Saturday, Jan 11",
-    time: "5:00 – 6:00 PM",
     title: "🧘 Mindful Yoga & Breathing",
-    description: "Gentle yoga and mindfulness techniques to reduce stress."
+    date: "Saturday, Jan 11",
+    description: "Gentle yoga and breathing exercises designed for teens."
   },
   {
+    title: "💃 Dance & Movement",
     date: "Saturday, Jan 18",
-    time: "5:00 – 6:00 PM",
-    title: "💃 Dance & Zumba Fun",
-    description: "Move, energize, and have fun with music and dance."
+    description: "Fun, inclusive dance session to energize and de-stress."
   },
   {
+    title: "🚶 Walk & Talk",
     date: "Saturday, Jan 25",
-    time: "5:00 – 6:00 PM",
-    title: "🚶 Walk Together & Talk",
-    description: "A guided group walk focused on connection and conversation."
+    description: "Guided community walk encouraging connection and conversation."
   }
 ];
 
-const eventList = document.getElementById("event-list");
+const container = document.getElementById("event-list");
 
-events.forEach(event => {
-  const card = document.createElement("div");
-  card.className = "event-card";
-
-  card.innerHTML = `
-    <h3>${event.title}</h3>
-    <p class="event-meta"><strong>${event.date}</strong> | ${event.time}</p>
-    <p>${event.description}</p>
+events.forEach(e => {
+  const div = document.createElement("div");
+  div.className = "event";
+  div.innerHTML = `
+    <h3>${e.title}</h3>
+    <p><strong>${e.date}</strong> | 5:00 – 6:00 PM</p>
+    <p>${e.description}</p>
   `;
-
-  eventList.appendChild(card);
+  container.appendChild(div);
 });
