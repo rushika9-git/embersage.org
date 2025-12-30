@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EmberSage — Sample Post</title>
+  <meta name="description" content="A sample post page with clean typography." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/theme.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="mark">EmberSage</span>
+        <span class="tag">Stories & notes</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="post.html" aria-current="page">Sample Post</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn icon-btn" type="button" onclick="toggleTheme()" aria-label="Toggle theme">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          Theme
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" style="padding-bottom: var(--space-4);">
+      <div class="container">
+        <div class="content card prose">
+          <div class="post-meta" style="margin-bottom: var(--space-3);">
+            <span>Dec 30, 2025</span><span>•</span><span>Design</span><span>•</span><span>5 min read</span>
+          </div>
+
+          <h1>A sample post with nice typography</h1>
+          <p class="lead">
+            This layout is meant to feel “WordPress theme clean”: generous spacing,
+            readable line lengths, and soft borders.
+          </p>
+
+          <p>
+            You can write posts directly in HTML, or later switch to a static generator.
+            For now, this is just a simple <code>post.html</code> you can duplicate.
+          </p>
+
+          <h2>Blockquote</h2>
+          <blockquote>
+            Design isn’t decoration. It’s the invisible structure that makes reading effortless.
+          </blockquote>
+
+          <h2>Code block</h2>
+          <pre><code>/* Example snippet */
+:root {
+  --bg: #fbfaf7;
+  --text: #1c1b1a;
+}</code></pre>
+
+          <h2>Checklist</h2>
+          <ul>
+            <li>Keep line length comfortable</li>
+            <li>Use clear headings</li>
+            <li>Let whitespace do the work</li>
+          </ul>
+
+          <hr class="hr" />
+
+          <p style="margin-bottom:0;">
+            ← <a href="index.html">Back to home</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> EmberSage</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
