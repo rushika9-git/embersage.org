@@ -2,65 +2,132 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>EmberSage | Teen Wellness Community</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<header>
-  <h1>🔥 EmberSage</h1>
-  <p class="tagline">A safe community where teens connect, relax, and grow together</p>
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-content">
+    <img src="logo.png" alt="EmberSage Logo" class="logo"/>
+    <h1>EmberSage</h1>
+    <p class="hero-text">
+      A calm, creative space where teens connect, recharge,
+      and grow—together.
+    </p>
+    <a href="#signup" class="btn-primary">Get Involved</a>
+  </div>
 </header>
 
-<section class="mission">
-  <h2>Our Mission</h2>
+<!-- ABOUT -->
+<section class="section">
+  <h2>About Us</h2>
   <p>
-    EmberSage is a nonprofit community initiative focused on helping
-    middle school and high school students reduce stress, build friendships,
-    and improve overall wellness through mindful, creative, and movement-based activities.
+    EmberSage is a community-driven nonprofit initiative focused on
+    supporting middle school and high school students through
+    stress-relieving, wellness-based group activities.
+  </p>
+  <p>
+    In today’s fast-paced and high-pressure environment, teens often
+    struggle with stress, anxiety, and social isolation.
+    EmberSage creates a welcoming space where teens can slow down,
+    express themselves, move their bodies, and build meaningful
+    connections—without judgment or competition.
   </p>
 </section>
 
-<section class="events">
-  <h2>📅 Weekly Community Events (Saturdays)</h2>
+<!-- WHAT WE DO -->
+<section class="section light-bg">
+  <h2>What We Do</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>🎨 Creative Arts</h3>
+      <p>
+        Art sessions that encourage self-expression, creativity,
+        and emotional release through drawing, coloring, and crafts.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🧘 Mindfulness & Yoga</h3>
+      <p>
+        Gentle yoga, breathing exercises, and mindfulness practices
+        designed specifically for teens to reduce stress and improve focus.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>💃 Dance & Movement</h3>
+      <p>
+        Fun, inclusive dance and movement sessions that promote
+        confidence, joy, and physical well-being.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🚶 Walk & Talk</h3>
+      <p>
+        Guided group walks that create space for relaxed conversation,
+        peer connection, and fresh air.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section class="section">
+  <h2>Weekly Community Events</h2>
+  <p class="center-text">
+    All events take place on Saturdays from <strong>5:00 – 6:00 PM</strong>.
+    Participation is free and open to middle & high school students.
+  </p>
+
   <div id="event-list"></div>
 </section>
 
-<section class="signup">
-  <h2>📝 Sign Up for an Event</h2>
+<!-- SIGNUP -->
+<section class="section light-bg" id="signup">
+  <h2>How to Sign Up</h2>
+
   <p>
-    Participation is free. Parent/guardian consent is required.
-    Please register using the form below.
+    Participation is free. Parent or guardian awareness and consent
+    is required for all participants.
   </p>
 
-  <!-- 🔁 Replace the src with YOUR Google Form embed link -->
+  <ol class="steps">
+    <li>Select the event(s) you’d like to attend</li>
+    <li>Complete the registration form below</li>
+    <li>You’ll receive confirmation details before the event</li>
+  </ol>
+
+  <!-- Replace YOUR_FORM_ID -->
   <iframe
     src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"
     width="100%"
-    height="900"
-    frameborder="0"
-    marginheight="0"
-    marginwidth="0">
-    Loading…
+    height="850"
+    frameborder="0">
   </iframe>
 </section>
 
-<section class="disclaimer">
-  <h2>Important Disclaimer</h2>
+<!-- DISCLAIMER -->
+<section class="section disclaimer">
+  <h2>Important Note</h2>
   <p>
-    EmberSage provides wellness and community-building activities only.
-    We do not offer medical, psychological, or clinical treatment.
-    All activities are optional and designed for general well-being.
+    EmberSage provides community wellness and recreational activities only.
+    We do not provide medical, psychological, or clinical services.
   </p>
   <p>
-    Teens participate with parent/guardian awareness and consent.
+    All activities are optional and intended to support general well-being.
   </p>
 </section>
 
 <footer>
   <p>© 2025 EmberSage Community & Wellness Initiative</p>
-  <p>Non-profit | Volunteer-led | Community-driven</p>
+  <p>Volunteer-led • Non-profit • Community-focused</p>
 </footer>
 
 <script src="script.js"></script>
